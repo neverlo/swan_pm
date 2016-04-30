@@ -8,7 +8,13 @@ $(function(){
                 middelComp = dbComp.init();
                 break;
             case 'projectIntrComp':
+                $(iframHtml).css({'height':'651px'});
                 $(iframHtml).attr('src','introduce.html');
+                middelComp = iframHtml;
+                break;
+            case 'logComp':
+                $(iframHtml).css({'height':'1160px'});
+                $(iframHtml).attr('src','log.html');
                 middelComp = iframHtml;
                 break;
         }
