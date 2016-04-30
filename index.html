@@ -20,11 +20,15 @@
         <!--框架js-->
 		<script src="resources/assets/js/ace-elements.min.js"></script>
 		<script src="resources/assets/js/ace.min.js"></script>
+        <script src="resources/assets/js/ace-extra.min.js"></script>
 	</head>
 
 	<body class="no-skin">
         <!--顶部-->
 		<div id="navbar" class="navbar navbar-default">
+            <script type="text/javascript">
+				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+			</script>
 			<div class="navbar-container" id="navbar-container">
 				<div class="navbar-header pull-left">
 					<a href="index.html" class="navbar-brand">
@@ -123,13 +127,6 @@
 										</li>
 									</ul>
 								</li>
-
-								<li class="dropdown-footer">
-									<a href="#">
-										查看所有消息
-										<i class="ace-icon fa fa-arrow-right"></i>
-									</a>
-								</li>
 							</ul>
 						</li>
 
@@ -144,7 +141,7 @@
 							</a>
 							<ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
 								<li>
-									<a href="profile.html">
+									<a onclick="showProfile()">
 										<i class="ace-icon fa fa-user"></i>
 										个人资料
 									</a>
@@ -276,7 +273,10 @@
                     
                     <!--中间展示面板-->
 					<div class="page-content">
-						<div id="middle-content"></div>
+						<div id="middle-content">
+                            <iframe style="border:0px;frameborder:0px;width:100%;height:651px;scrolling=no" src="introduce.html">
+                            </iframe>
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -287,7 +287,6 @@
 					<div class="footer-content">
 						<span class="bigger-120">
 							<span class="blue bolder">PM项目管理系统</span>
-							 &copy; 2016-2999
 						</span>
 					</div>
 				</div>
