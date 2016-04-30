@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>数据库表管理</title>
+		<link href="resources/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="resources/assets/fonts/fonts.googleapis.com.css" />
+		<link rel="stylesheet" href="resources/assets/css/ace.min.css" />
+        <style>body{overflow: hidden;}</style>
+	</head>
+<body>
+    <div class="main-container">
+        <div class="main-container-inner">
+            <div class="main-content">
+                <div class="alert alert-block alert-success">
+                    <button type="button" class="close" data-dismiss="alert">
+                        <i class="icon-remove"></i>
+                    </button>
+                    <i class="icon-ok green"></i>
+                    当前项目
+                    <strong class="blue">
+                        PM项目管理系统
+                    </strong>
+                    ,所使用的数据库为test.	
+                </div>
+                <hr>
+                
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="widget-box widget-color-dark">
+                                <div class="widget-header">
+                                    <h5 class="widget-title bigger lighter">用户表（user）</h5>
+                                </div>
+
+                                <div class="widget-body">
+                                    <div class="widget-main">
+                                        <ul class="list-unstyled spaced2">
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                id //表ID
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                username //用户名
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                password //密码
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                datetime //注册日期
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                sex //性别
+                                            </li>
+                                            <li><i class="ace-icon fa fa-times red"></i>
+                                                address //住址
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-block btn-inverse">
+                                            <i class="ace-icon fa fa-shopping-cart bigger-110"></i>
+                                            <span>Buy</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="widget-box widget-color-orange">
+                                <div class="widget-header">
+                                    <h5 class="widget-title bigger lighter">用户信息表(user_info)</h5>
+                                </div>
+
+                                <div class="widget-body">
+                                    <div class="widget-main">
+                                        <ul class="list-unstyled spaced2">
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                id //表ID
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                user_id //用户ID
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                detail //用户简介
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                age //年龄
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                height //身高
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-block btn-warning">
+                                            <i class="ace-icon fa fa-shopping-cart bigger-110"></i>
+                                            <span>Buy</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="widget-box widget-color-blue">
+                                <div class="widget-header">
+                                    <h5 class="widget-title bigger lighter">任务表（task）</h5>
+                                </div>
+
+                                <div class="widget-body">
+                                    <div class="widget-main">
+                                        <ul class="list-unstyled spaced2">
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                id //表id
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                form_user_id //需求发起人id
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                to_user_id //需求接收人id
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                content //需求内容
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                start_time //需求开始日期
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                end_time //需求结束时间
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                end_time //需求状态
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <a href="#" class="btn btn-block btn-primary">
+                                            <i class="ace-icon fa fa-shopping-cart bigger-110"></i>
+                                            <span>Buy</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="widget-box widget-color-green">
+                                <div class="widget-header">
+                                    <h5 class="widget-title bigger lighter">日志表（log）</h5>
+                                </div>
+
+                                <div class="widget-body">
+                                    <div class="widget-main">
+                                        <ul class="list-unstyled spaced2">
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                id //表id
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                user_id //用户id
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                content //日志内容
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                datetime //产生时间
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <a href="#" class="btn btn-block btn-success">
+                                            <i class="ace-icon fa fa-shopping-cart bigger-110"></i>
+                                            <span>Buy</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xs-12">
+                    <!-- PAGE CONTENT BEGINS -->
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="widget-box widget-color-dark">
+                                <div class="widget-header">
+                                    <h5 class="widget-title bigger lighter">表A（table A）</h5>
+                                </div>
+
+                                <div class="widget-body">
+                                    <div class="widget-main">
+                                        <ul class="list-unstyled spaced2">
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                id //表ID
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                username //用户名
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                password //密码
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                datetime //注册日期
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-block btn-inverse">
+                                            <i class="ace-icon fa fa-shopping-cart bigger-110"></i>
+                                            <span>Buy</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="widget-box widget-color-orange">
+                                <div class="widget-header">
+                                    <h5 class="widget-title bigger lighter">表B（table B）</h5>
+                                </div>
+
+                                <div class="widget-body">
+                                    <div class="widget-main">
+                                        <ul class="list-unstyled spaced2">
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                id //表id
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                username //用户名
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                password //密码
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                datetime //时间
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <a href="#" class="btn btn-block btn-warning">
+                                            <i class="ace-icon fa fa-shopping-cart bigger-110"></i>
+                                            <span>Buy</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="widget-box widget-color-blue">
+                                <div class="widget-header">
+                                    <h5 class="widget-title bigger lighter">表C（tabl C）</h5>
+                                </div>
+
+                                <div class="widget-body">
+                                    <div class="widget-main">
+                                        <ul class="list-unstyled spaced2">
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                id //表id
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                username //用户名
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                password //密码
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                datetime //时间
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <a href="#" class="btn btn-block btn-primary">
+                                            <i class="ace-icon fa fa-shopping-cart bigger-110"></i>
+                                            <span>Buy</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="widget-box widget-color-green">
+                                <div class="widget-header">
+                                    <h5 class="widget-title bigger lighter">表C（table C）</h5>
+                                </div>
+
+                                <div class="widget-body">
+                                    <div class="widget-main">
+                                        <ul class="list-unstyled spaced2">
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                id //表id
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                username //用户名
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                password //密码
+                                            </li>
+                                            <li><i class="ace-icon fa fa-check green"></i>
+                                                datetime //时间
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-block btn-success">
+                                            <i class="ace-icon fa fa-shopping-cart bigger-110"></i>
+                                            <span>Buy</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
