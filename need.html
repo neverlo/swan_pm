@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>项目约束</title>
+		<link href="resources/assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="resources/assets/font-awesome/4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="resources/assets/fonts/fonts.googleapis.com.css" />
+		<link rel="stylesheet" href="resources/assets/css/ace.min.css" />
+        <style>body{overflow: hidden;}</style>
+	</head>
+<body>
+    <div class="main-container">
+        <div class="main-container-inner">
+            <div class="main-content">
+                
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-sm-12 folders">
+                            <div class="page-content">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="tabbable">
+                                            
+                                            <div class="tab-content no-border no-padding">
+                                                <div id="inbox" class="tab-pane in active">
+                                                    <div class="message-container">
+                                                        <div id="id-message-list-navbar" class="message-navbar clearfix">
+                                                            <div class="message-bar">
+                                                                <div class="message-infobar" id="id-message-infobar">
+                                                                    <span class="blue bigger-150">需求任务清单</span>
+                                                                    <span class="grey bigger-110">(2个任务有新反馈)</span>
+                                                                </div>
+                                                                <ul id="inbox-tabs" style="position: absolute;right:10px;" class="inbox-tabs nav nav-tabs padding-16 tab-size-bigger tab-space-1">
+                                                                    <li class="li-new-mail pull-right">
+                                                                        <a data-toggle="tab" data-target="write" class="btn-new-mail">
+                                                                            <span class="btn btn-purple no-border">
+                                                                                <span class="bigger-110">新建任务</span>
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="message-toolbar" style="position: absolute;top: 21px;left: 7px;">
+                                                                    <button type="button" class="btn btn-xs btn-white btn-primary">
+                                                                        <i class="ace-icon fa fa-trash-o bigger-125 orange"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="message-list-container">
+                                                            <div class="message-list" id="message-list">
+                                                                <div class="message-item message-unread">
+                                                                    <label class="inline">
+                                                                        <input type="checkbox" class="ace" />
+                                                                        <span class="lbl"></span>
+                                                                    </label>
+
+                                                                    <i class="message-star ace-icon fa fa-star orange2"></i>
+                                                                    <span class="sender" title="Alex John Red Smith">Alex John Red Smith </span>
+                                                                    <span class="time">1:33 pm</span>
+
+                                                                    <span class="summary">
+                                                                        <span class="text">
+                                                                            Click to open this message
+                                                                        </span>
+                                                                    </span>
+                                                                    <div class="message-content">
+                                                                        <div class="message-header clearfix">
+                                                                            <div class="pull-left">
+                                                                                <span class="blue bigger-125"> Clik to open this message </span>
+
+                                                                                <div class="space-4"></div>
+
+                                                                                <i class="ace-icon fa fa-star orange2"></i>
+
+                                                                                &nbsp;
+                                                                                <img class="middle" alt="John's Avatar" src="resources/assets/avatars/avatar.png" width="32">
+                                                                                &nbsp;
+                                                                                <a href="#" class="sender">John Doe</a>
+
+                                                                                &nbsp;
+                                                                                <i class="ace-icon fa fa-clock-o bigger-110 orange middle"></i>
+                                                                                <span class="time grey">Today, 7:15 pm</span>
+                                                                            </div>
+
+                                                                            <div class="pull-right action-buttons">
+                                                                                <a href="#">
+                                                                                    <i class="ace-icon fa fa-reply green icon-only bigger-130"></i>
+                                                                                </a>
+
+                                                                                <a href="#">
+                                                                                    <i class="ace-icon fa fa-mail-forward blue icon-only bigger-130"></i>
+                                                                                </a>
+
+                                                                                <a href="#">
+                                                                                    <i class="ace-icon fa fa-trash-o red icon-only bigger-130"></i>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="hr hr-double"></div>
+
+                                                                        <div class="message-body ace-scroll" style="position: relative;"><div class="scroll-track scroll-visible scroll-active" style="display: block; height: 150px;"><div class="scroll-bar" style="height: 134px; top: 0px;"></div></div><div class="scroll-content" style="max-height: 150px;">
+                                                                            <p>
+                                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                                            </p>
+
+                                                                            <p>
+                                                                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                                            </p>
+
+                                                                            <p>
+                                                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                                                            </p>
+                                                                        </div></div>
+
+                                                                        <div class="hr hr-double"></div>
+
+                                                                        <div class="message-attachment clearfix">
+                                                                            <div class="attachment-title">
+                                                                                <span class="blue bolder bigger-110">Attachments</span>
+                                                                                &nbsp;
+                                                                                <span class="grey">(2 files, 4.5 MB)</span>
+
+                                                                                <div class="inline position-relative">
+                                                                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                                                                                        &nbsp;
+                                                                                        <i class="ace-icon fa fa-caret-down bigger-125 middle"></i>
+                                                                                    </a>
+
+                                                                                    <ul class="dropdown-menu dropdown-lighter">
+                                                                                        <li>
+                                                                                            <a href="#">Download all as zip</a>
+                                                                                        </li>
+
+                                                                                        <li>
+                                                                                            <a href="#">Display in slideshow</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            &nbsp;
+                                                                            <ul class="attachment-list pull-left list-unstyled">
+                                                                                <li>
+                                                                                    <a href="#" class="attached-file">
+                                                                                        <i class="ace-icon fa fa-file-o bigger-110"></i>
+                                                                                        <span class="attached-name">Document1.pdf</span>
+                                                                                    </a>
+
+                                                                                    <span class="action-buttons">
+                                                                                        <a href="#">
+                                                                                            <i class="ace-icon fa fa-download bigger-125 blue"></i>
+                                                                                        </a>
+
+                                                                                        <a href="#">
+                                                                                            <i class="ace-icon fa fa-trash-o bigger-125 red"></i>
+                                                                                        </a>
+                                                                                    </span>
+                                                                                </li>
+
+                                                                                <li>
+                                                                                    <a href="#" class="attached-file">
+                                                                                        <i class="ace-icon fa fa-film bigger-110"></i>
+                                                                                        <span class="attached-name">Sample.mp4</span>
+                                                                                    </a>
+
+                                                                                    <span class="action-buttons">
+                                                                                        <a href="#">
+                                                                                            <i class="ace-icon fa fa-download bigger-125 blue"></i>
+                                                                                        </a>
+
+                                                                                        <a href="#">
+                                                                                            <i class="ace-icon fa fa-trash-o bigger-125 red"></i>
+                                                                                        </a>
+                                                                                    </span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="message-item message-unread">
+                                                                    <label class="inline">
+                                                                        <input type="checkbox" class="ace" />
+                                                                        <span class="lbl"></span>
+                                                                    </label>
+
+                                                                    <i class="message-star ace-icon fa fa-star-o light-grey"></i>
+
+                                                                    <span class="sender" title="John Doe">
+                                                                        John Doe
+                                                                        <span class="light-grey">(4)</span>
+                                                                    </span>
+                                                                    <span class="time">7:15 pm</span>
+
+                                                                    <span class="attachment">
+                                                                        <i class="ace-icon fa fa-paperclip"></i>
+                                                                    </span>
+
+                                                                    <span class="summary">
+                                                                        <span class="badge badge-pink mail-tag"></span>
+                                                                        <span class="text">
+                                                                            Clik to open this message right here
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+
+                                                                <div class="message-item">
+                                                                    <label class="inline">
+                                                                        <input type="checkbox" class="ace" />
+                                                                        <span class="lbl"></span>
+                                                                    </label>
+
+                                                                    <i class="message-star ace-icon fa fa-star-o light-grey"></i>
+                                                                    <span class="sender" title="Philip Markov">Philip Markov </span>
+                                                                    <span class="time">10:15 am</span>
+
+                                                                    <span class="attachment">
+                                                                        <i class="ace-icon fa fa-paperclip"></i>
+                                                                    </span>
+
+                                                                    <span class="summary">
+                                                                        <span class="message-flags">
+                                                                            <i class="ace-icon fa fa-reply light-grey"></i>
+                                                                        </span>
+                                                                        <span class="text">
+                                                                            Photo booth beard raw denim letterpress vegan
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+
+                                                                <div class="message-item">
+                                                                    <label class="inline">
+                                                                        <input type="checkbox" class="ace" />
+                                                                        <span class="lbl"></span>
+                                                                    </label>
+
+                                                                    <i class="message-star ace-icon fa fa-star orange2"></i>
+                                                                    <span class="sender" title="Sabrina">Sabrina </span>
+                                                                    <span class="time">Yesterday</span>
+
+                                                                    <span class="summary">
+                                                                        <span class="text">
+                                                                            Nullam quis risus eget urna mollis ornare
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+
+                                                                <div class="message-item">
+                                                                    <label class="inline">
+                                                                        <input type="checkbox" class="ace" />
+                                                                        <span class="lbl"></span>
+                                                                    </label>
+
+                                                                    <i class="message-star ace-icon fa fa-star-o light-grey"></i>
+                                                                    <span class="sender" title="Philip Markov">Philip Markov </span>
+                                                                    <span class="time">Yesterday</span>
+
+                                                                    <span class="attachment">
+                                                                        <i class="ace-icon fa fa-paperclip"></i>
+                                                                    </span>
+
+                                                                    <span class="summary">
+                                                                        <span class="badge badge-success mail-tag"></span>
+                                                                        <span class="text">
+                                                                            Vestibulum id ligula porta felis euismod
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+
+                                                                <div class="message-item">
+                                                                    <label class="inline">
+                                                                        <input type="checkbox" class="ace" />
+                                                                        <span class="lbl"></span>
+                                                                    </label>
+
+                                                                    <i class="message-star ace-icon fa fa-star-o light-grey"></i>
+                                                                    <span class="sender" title="Doctor Gomenz">Doctor Gomenz </span>
+                                                                    <span class="time">April 5</span>
+
+                                                                    <span class="summary">
+                                                                        <span class="text">
+                                                                            Vim te vivendo convenire, summo fuisset
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+
+                                                                <div class="message-item">
+                                                                    <label class="inline">
+                                                                        <input type="checkbox" class="ace" />
+                                                                        <span class="lbl"></span>
+                                                                    </label>
+
+                                                                    <i class="message-star ace-icon fa fa-star-o light-grey"></i>
+                                                                    <span class="sender" title="Robin Hood">Robin Hood </span>
+                                                                    <span class="time">April 4</span>
+
+                                                                    <span class="summary">
+                                                                        <span class="message-flags">
+                                                                            <i class="ace-icon fa fa-reply light-grey"></i>
+                                                                        </span>
+                                                                        <span class="text">
+                                                                            No eos veniam equidem mentitum, his porro
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+
+                                                                <div class="message-item">
+                                                                    <label class="inline">
+                                                                        <input type="checkbox" class="ace" />
+                                                                        <span class="lbl"></span>
+                                                                    </label>
+
+                                                                    <i class="message-star ace-icon fa fa-star-o light-grey"></i>
+                                                                    <span class="sender" title="Google Inc">Google Inc </span>
+                                                                    <span class="time">April 3</span>
+
+                                                                    <span class="summary">
+                                                                        <span class="badge badge-grey mail-tag"></span>
+                                                                        <span class="text">
+                                                                            Convallis facilisis euismod urna sodales
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+
+                                                                <div class="message-item">
+                                                                    <label class="inline">
+                                                                        <input type="checkbox" class="ace" />
+                                                                        <span class="lbl"></span>
+                                                                    </label>
+
+                                                                    <i class="message-star ace-icon fa fa-star-o light-grey"></i>
+                                                                    <span class="sender" title="Shrek">Shrek </span>
+                                                                    <span class="time">March 28</span>
+
+                                                                    <span class="attachment">
+                                                                        <i class="ace-icon fa fa-paperclip"></i>
+                                                                    </span>
+
+                                                                    <span class="summary">
+                                                                        <span class="message-flags">
+                                                                            <i class="ace-icon fa fa-flag fa-flip-horizontal light-grey"></i>
+                                                                        </span>
+                                                                        <span class="text">
+                                                                            Photo booth beard raw denim letterpress vegan messenger
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+
+                                                                <div class="message-item">
+                                                                    <label class="inline">
+                                                                        <input type="checkbox" class="ace" />
+                                                                        <span class="lbl"></span>
+                                                                    </label>
+
+                                                                    <i class="message-star ace-icon fa fa-star-o light-grey"></i>
+                                                                    <span class="sender" title="Yahoo!">Yahoo! </span>
+                                                                    <span class="time">March 27</span>
+
+                                                                    <span class="summary">
+                                                                        <span class="message-flags">
+                                                                            <i class="ace-icon fa fa-mail-forward light-grey"></i>
+                                                                        </span>
+                                                                        <span class="text">
+                                                                            Tofu biodiesel williamsburg marfa, four loko mcsweeney
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

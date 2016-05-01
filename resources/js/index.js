@@ -18,8 +18,18 @@ $(function(){
                 middelComp = iframHtml;
                 break;
             case 'dbDetailComp':
-                 $(iframHtml).css({'height':'800px'});
+                $(iframHtml).css({'height':'800px'});
                 $(iframHtml).attr('src','db.html');
+                middelComp = iframHtml;
+                break;
+            case 'projectDocumentComp':
+                $(iframHtml).css({'height':'800px'});
+                $(iframHtml).attr('src','item.html');
+                middelComp = iframHtml;
+                break;
+            case 'needDocumentComp':
+                $(iframHtml).css({'height':'900px'});
+                $(iframHtml).attr('src','need.html');
                 middelComp = iframHtml;
                 break;
         }

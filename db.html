@@ -4,6 +4,7 @@
 		<meta charset="utf-8" />
 		<title>数据库表管理</title>
 		<link href="resources/assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="resources/assets/font-awesome/4.2.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="resources/assets/fonts/fonts.googleapis.com.css" />
 		<link rel="stylesheet" href="resources/assets/css/ace.min.css" />
         <style>body{overflow: hidden;}</style>
@@ -31,24 +32,44 @@
                             <div class="widget-box widget-color-dark">
                                 <div class="widget-header">
                                     <h5 class="widget-title bigger lighter">用户表（user）</h5>
+                                    <table border="0" class="ui-pg-table navtable" style="margin-right:10px;margin-top:7px;float:right;table-layout:auto;">
+                                        <tr>
+                                            <td class="ui-pg-button ui-corner-all" title="删除字段">
+                                                <div class="ui-pg-div">
+                                                    <span tooltype="delete" class="ui-icon ace-icon fa fa-trash-o red"></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </div>
 
                                 <div class="widget-body">
                                     <div class="widget-main">
+                                        <div>新增
+                                            <input style="padding: 5px 3px 6px;" class="ui-pg-input" type="text" size="8" placeholder="输入字段名" role="textbox">
+                                            <select class="ui-pg-selbox" style="height:34px;width:74px;">
+                                                <option role="option" value="">选类型</option>
+                                                <option role="option" value="int">int</option>
+                                                <option role="option" value="varchar">varchar</option>
+                                                <option role="option" value="float">float</option>
+                                                <option role="option" value="datetime">datetime</option>
+                                            </select>
+                                            <button class="btn btn-xs btn-pink" style="height:33px;margin-top:-3px;">add</button>
+                                        </div>
                                         <ul class="list-unstyled spaced2">
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 id //表ID
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 username //用户名
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 password //密码
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 datetime //注册日期
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 sex //性别
                                             </li>
                                             <li><i class="ace-icon fa fa-times red"></i>
@@ -56,12 +77,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div>
-                                        <a href="#" class="btn btn-block btn-inverse">
-                                            <i class="ace-icon fa fa-shopping-cart bigger-110"></i>
-                                            <span>Buy</span>
-                                        </a>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -70,33 +86,47 @@
                             <div class="widget-box widget-color-orange">
                                 <div class="widget-header">
                                     <h5 class="widget-title bigger lighter">用户信息表(user_info)</h5>
+                                    <table border="0" class="ui-pg-table navtable" style="margin-right:10px;margin-top:7px;float:right;table-layout:auto;">
+                                        <tr>
+                                            <td class="ui-pg-button ui-corner-all" title="删除字段">
+                                                <div class="ui-pg-div">
+                                                    <span tooltype="delete" class="ui-icon ace-icon fa fa-trash-o red"></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </div>
 
                                 <div class="widget-body">
                                     <div class="widget-main">
+                                        <div>新增
+                                            <input style="padding: 5px 3px 6px;" class="ui-pg-input" type="text" size="8" placeholder="输入字段名" role="textbox">
+                                            <select class="ui-pg-selbox" style="height:34px;width:74px;">
+                                                <option role="option" value="">选类型</option>
+                                                <option role="option" value="int">int</option>
+                                                <option role="option" value="varchar">varchar</option>
+                                                <option role="option" value="float">float</option>
+                                                <option role="option" value="datetime">datetime</option>
+                                            </select>
+                                            <button class="btn btn-xs btn-pink" style="height:33px;margin-top:-3px;">add</button>
+                                        </div>
                                         <ul class="list-unstyled spaced2">
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 id //表ID
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 user_id //用户ID
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 detail //用户简介
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 age //年龄
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 height //身高
                                             </li>
                                         </ul>
-                                    </div>
-                                    <div>
-                                        <a href="#" class="btn btn-block btn-warning">
-                                            <i class="ace-icon fa fa-shopping-cart bigger-110"></i>
-                                            <span>Buy</span>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -106,40 +136,53 @@
                             <div class="widget-box widget-color-blue">
                                 <div class="widget-header">
                                     <h5 class="widget-title bigger lighter">任务表（task）</h5>
+                                    <table border="0" class="ui-pg-table navtable" style="margin-right:10px;margin-top:7px;float:right;table-layout:auto;">
+                                        <tr>
+                                            <td class="ui-pg-button ui-corner-all" title="删除字段">
+                                                <div class="ui-pg-div">
+                                                    <span tooltype="delete" class="ui-icon ace-icon fa fa-trash-o red"></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </div>
 
                                 <div class="widget-body">
                                     <div class="widget-main">
+                                        <div>新增
+                                            <input style="padding: 5px 3px 6px;" class="ui-pg-input" type="text" size="8" placeholder="输入字段名" role="textbox">
+                                            <select class="ui-pg-selbox" style="height:34px;width:74px;">
+                                                <option role="option" value="">选类型</option>
+                                                <option role="option" value="int">int</option>
+                                                <option role="option" value="varchar">varchar</option>
+                                                <option role="option" value="float">float</option>
+                                                <option role="option" value="datetime">datetime</option>
+                                            </select>
+                                            <button class="btn btn-xs btn-pink" style="height:33px;margin-top:-3px;">add</button>
+                                        </div>
                                         <ul class="list-unstyled spaced2">
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 id //表id
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 form_user_id //需求发起人id
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 to_user_id //需求接收人id
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 content //需求内容
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 start_time //需求开始日期
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 end_time //需求结束时间
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 end_time //需求状态
                                             </li>
                                         </ul>
-                                    </div>
-
-                                    <div>
-                                        <a href="#" class="btn btn-block btn-primary">
-                                            <i class="ace-icon fa fa-shopping-cart bigger-110"></i>
-                                            <span>Buy</span>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -149,31 +192,44 @@
                             <div class="widget-box widget-color-green">
                                 <div class="widget-header">
                                     <h5 class="widget-title bigger lighter">日志表（log）</h5>
+                                    <table border="0" class="ui-pg-table navtable" style="margin-right:10px;margin-top:7px;float:right;table-layout:auto;">
+                                        <tr>
+                                            <td class="ui-pg-button ui-corner-all" title="删除字段">
+                                                <div class="ui-pg-div">
+                                                    <span tooltype="delete" class="ui-icon ace-icon fa fa-trash-o red"></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </div>
 
                                 <div class="widget-body">
                                     <div class="widget-main">
+                                        <div>新增
+                                            <input style="padding: 5px 3px 6px;" class="ui-pg-input" type="text" size="8" placeholder="输入字段名" role="textbox">
+                                            <select class="ui-pg-selbox" style="height:34px;width:74px;">
+                                                <option role="option" value="">选类型</option>
+                                                <option role="option" value="int">int</option>
+                                                <option role="option" value="varchar">varchar</option>
+                                                <option role="option" value="float">float</option>
+                                                <option role="option" value="datetime">datetime</option>
+                                            </select>
+                                            <button class="btn btn-xs btn-pink" style="height:33px;margin-top:-3px;">add</button>
+                                        </div>
                                         <ul class="list-unstyled spaced2">
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 id //表id
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 user_id //用户id
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 content //日志内容
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 datetime //产生时间
                                             </li>
                                         </ul>
-                                    </div>
-
-                                    <div>
-                                        <a href="#" class="btn btn-block btn-success">
-                                            <i class="ace-icon fa fa-shopping-cart bigger-110"></i>
-                                            <span>Buy</span>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -188,30 +244,44 @@
                             <div class="widget-box widget-color-dark">
                                 <div class="widget-header">
                                     <h5 class="widget-title bigger lighter">表A（table A）</h5>
+                                    <table border="0" class="ui-pg-table navtable" style="margin-right:10px;margin-top:7px;float:right;table-layout:auto;">
+                                        <tr>
+                                            <td class="ui-pg-button ui-corner-all" title="删除字段">
+                                                <div class="ui-pg-div">
+                                                    <span tooltype="delete" class="ui-icon ace-icon fa fa-trash-o red"></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </div>
 
                                 <div class="widget-body">
                                     <div class="widget-main">
+                                        <div>新增
+                                            <input style="padding: 5px 3px 6px;" class="ui-pg-input" type="text" size="8" placeholder="输入字段名" role="textbox">
+                                            <select class="ui-pg-selbox" style="height:34px;width:74px;">
+                                                <option role="option" value="">选类型</option>
+                                                <option role="option" value="int">int</option>
+                                                <option role="option" value="varchar">varchar</option>
+                                                <option role="option" value="float">float</option>
+                                                <option role="option" value="datetime">datetime</option>
+                                            </select>
+                                            <button class="btn btn-xs btn-pink" style="height:33px;margin-top:-3px;">add</button>
+                                        </div>
                                         <ul class="list-unstyled spaced2">
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 id //表ID
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 username //用户名
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 password //密码
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 datetime //注册日期
                                             </li>
                                         </ul>
-                                    </div>
-                                    <div>
-                                        <a href="#" class="btn btn-block btn-inverse">
-                                            <i class="ace-icon fa fa-shopping-cart bigger-110"></i>
-                                            <span>Buy</span>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -221,31 +291,44 @@
                             <div class="widget-box widget-color-orange">
                                 <div class="widget-header">
                                     <h5 class="widget-title bigger lighter">表B（table B）</h5>
+                                    <table border="0" class="ui-pg-table navtable" style="margin-right:10px;margin-top:7px;float:right;table-layout:auto;">
+                                        <tr>
+                                            <td class="ui-pg-button ui-corner-all" title="删除字段">
+                                                <div class="ui-pg-div">
+                                                    <span tooltype="delete" class="ui-icon ace-icon fa fa-trash-o red"></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </div>
 
                                 <div class="widget-body">
                                     <div class="widget-main">
+                                        <div>新增
+                                            <input style="padding: 5px 3px 6px;" class="ui-pg-input" type="text" size="8" placeholder="输入字段名" role="textbox">
+                                            <select class="ui-pg-selbox" style="height:34px;width:74px;">
+                                                <option role="option" value="">选类型</option>
+                                                <option role="option" value="int">int</option>
+                                                <option role="option" value="varchar">varchar</option>
+                                                <option role="option" value="float">float</option>
+                                                <option role="option" value="datetime">datetime</option>
+                                            </select>
+                                            <button class="btn btn-xs btn-pink" style="height:33px;margin-top:-3px;">add</button>
+                                        </div>
                                         <ul class="list-unstyled spaced2">
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 id //表id
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 username //用户名
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 password //密码
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 datetime //时间
                                             </li>
                                         </ul>
-                                    </div>
-
-                                    <div>
-                                        <a href="#" class="btn btn-block btn-warning">
-                                            <i class="ace-icon fa fa-shopping-cart bigger-110"></i>
-                                            <span>Buy</span>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -255,31 +338,44 @@
                             <div class="widget-box widget-color-blue">
                                 <div class="widget-header">
                                     <h5 class="widget-title bigger lighter">表C（tabl C）</h5>
+                                    <table border="0" class="ui-pg-table navtable" style="margin-right:10px;margin-top:7px;float:right;table-layout:auto;">
+                                        <tr>
+                                            <td class="ui-pg-button ui-corner-all" title="删除字段">
+                                                <div class="ui-pg-div">
+                                                    <span tooltype="delete" class="ui-icon ace-icon fa fa-trash-o red"></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </div>
 
                                 <div class="widget-body">
                                     <div class="widget-main">
+                                        <div>新增
+                                            <input style="padding: 5px 3px 6px;" class="ui-pg-input" type="text" size="8" placeholder="输入字段名" role="textbox">
+                                            <select class="ui-pg-selbox" style="height:34px;width:74px;">
+                                                <option role="option" value="">选类型</option>
+                                                <option role="option" value="int">int</option>
+                                                <option role="option" value="varchar">varchar</option>
+                                                <option role="option" value="float">float</option>
+                                                <option role="option" value="datetime">datetime</option>
+                                            </select>
+                                            <button class="btn btn-xs btn-pink" style="height:33px;margin-top:-3px;">add</button>
+                                        </div>
                                         <ul class="list-unstyled spaced2">
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 id //表id
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 username //用户名
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 password //密码
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 datetime //时间
                                             </li>
                                         </ul>
-                                    </div>
-
-                                    <div>
-                                        <a href="#" class="btn btn-block btn-primary">
-                                            <i class="ace-icon fa fa-shopping-cart bigger-110"></i>
-                                            <span>Buy</span>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -289,30 +385,44 @@
                             <div class="widget-box widget-color-green">
                                 <div class="widget-header">
                                     <h5 class="widget-title bigger lighter">表C（table C）</h5>
+                                    <table border="0" class="ui-pg-table navtable" style="margin-right:10px;margin-top:7px;float:right;table-layout:auto;">
+                                        <tr>
+                                            <td class="ui-pg-button ui-corner-all" title="删除字段">
+                                                <div class="ui-pg-div">
+                                                    <span tooltype="delete" class="ui-icon ace-icon fa fa-trash-o red"></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </div>
 
                                 <div class="widget-body">
                                     <div class="widget-main">
+                                        <div>新增
+                                            <input style="padding: 5px 3px 6px;" class="ui-pg-input" type="text" size="8" placeholder="输入字段名" role="textbox">
+                                            <select class="ui-pg-selbox" style="height:34px;width:74px;">
+                                                <option role="option" value="">选类型</option>
+                                                <option role="option" value="int">int</option>
+                                                <option role="option" value="varchar">varchar</option>
+                                                <option role="option" value="float">float</option>
+                                                <option role="option" value="datetime">datetime</option>
+                                            </select>
+                                            <button class="btn btn-xs btn-pink" style="height:33px;margin-top:-3px;">add</button>
+                                        </div>
                                         <ul class="list-unstyled spaced2">
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 id //表id
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 username //用户名
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 password //密码
                                             </li>
-                                            <li><i class="ace-icon fa fa-check green"></i>
+                                            <li><i class="ace-icon fa fa-times red"></i>
                                                 datetime //时间
                                             </li>
                                         </ul>
-                                    </div>
-                                    <div>
-                                        <a href="#" class="btn btn-block btn-success">
-                                            <i class="ace-icon fa fa-shopping-cart bigger-110"></i>
-                                            <span>Buy</span>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
