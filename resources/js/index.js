@@ -5,27 +5,24 @@ $(function(){
         var middelComp = "";
         if(compEle=='dbComp'){
             middelComp = dbComp.init();
+            $('#middle-content').html(middelComp);
         }else if(compEle=='projectIntrComp'){
-            $('#iframe').css({'height':'651px'});
-            $('#iframe').attr('src','introduce.html');//把src的值设置成introduce.html
+            $('#swan').css({'height':'651px'});
+            $('#swan').attr('src','introduce.html');//把src的值设置成introduce.html
         }else if(compEle=='logComp'){
-            $('#iframe').css({'height':'1160px'});
-            $('#iframe').attr('src','log.html');
+            $('#swan').css({'height':'1160px'});
+            $('#swan').attr('src','log.html');
         }else if(compEle=='dbDetailComp'){
-            $('#iframe').css({'height':'800px'});
-            $('#iframe').attr('src','db.html');
+            $('#swan').css({'height':'800px'});
+            $('#swan').attr('src','db.html');
         }else if(compEle=='projectDocumentComp'){
-            $('#iframe').css({'height':'800px'});
-            $('#iframe').attr('src','item.html');
+            $('#swan').css({'height':'800px'});
+            $('#swan').attr('src','item.html');
         }else if(compEle=='needDocumentComp'){
-            $('#iframe').css({'height':'900px'});
-            $('#iframe').attr('src','need.html');
+            $('#swan').css({'height':'900px'});
+            $('#swan').attr('src','need.html');
         }
-        if(middelComp==''){
-            return;
-        }
-        changeTitle(compEle);
-        $('#middle-content').html(middelComp);
+        changeTitle(compEle);//参数
     });
 });
 
@@ -49,6 +46,10 @@ function changeTitle(type){
 //个人资料
 function showProfile(){
     changeTitle('profile');
-    var middelComp = $('<iframe style="border:0px;frameborder:0px;width:100%;height:651px;scrolling=no" src="profile.html"></iframe>');
-    $('#middle-content').html(middelComp);
+    $('#swan').css({'height':'651px'});
+    $('#swan').attr('src','profile.html');
+}
+
+function A(a,b){//参数
+    var s = a + b;
 }
