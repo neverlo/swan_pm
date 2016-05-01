@@ -1,37 +1,25 @@
 $(function(){
-    var iframHtml = $('<iframe style="border:0px;frameborder:0px;width:100%;height:651px;scrolling=no" src="profile.html"></iframe>');
-    $('#pm-nav li a').click(function(){
-        var compEle = $(this).attr('comp');
+    $('#pm-nav li a').click(function(){//作用域this,表示当前点击的对象
+        //attr获取this(a)的属性comp的值
+        var compEle = $(this).attr('comp'); //jquery先获取某个html对象，然后再做某个事情
         var middelComp = "";
-        switch (compEle){
-            case 'dbComp'://数据库SQL脚本组件
-                middelComp = dbComp.init();
-                break;
-            case 'projectIntrComp':
-                $(iframHtml).css({'height':'651px'});
-                $(iframHtml).attr('src','introduce.html');
-                middelComp = iframHtml;
-                break;
-            case 'logComp':
-                $(iframHtml).css({'height':'1160px'});
-                $(iframHtml).attr('src','log.html');
-                middelComp = iframHtml;
-                break;
-            case 'dbDetailComp':
-                $(iframHtml).css({'height':'800px'});
-                $(iframHtml).attr('src','db.html');
-                middelComp = iframHtml;
-                break;
-            case 'projectDocumentComp':
-                $(iframHtml).css({'height':'800px'});
-                $(iframHtml).attr('src','item.html');
-                middelComp = iframHtml;
-                break;
-            case 'needDocumentComp':
-                $(iframHtml).css({'height':'900px'});
-                $(iframHtml).attr('src','need.html');
-                middelComp = iframHtml;
-                break;
+        if(compEle=='dbComp'){
+            middelComp = dbComp.init();
+        }else if(compEle=='projectIntrComp'){
+            $('#iframe').css({'height':'651px'});
+            $('#iframe').attr('src','introduce.html');//把src的值设置成introduce.html
+        }else if(compEle=='logComp'){
+            $('#iframe').css({'height':'1160px'});
+            $('#iframe').attr('src','log.html');
+        }else if(compEle=='dbDetailComp'){
+            $('#iframe').css({'height':'800px'});
+            $('#iframe').attr('src','db.html');
+        }else if(compEle=='projectDocumentComp'){
+            $('#iframe').css({'height':'800px'});
+            $('#iframe').attr('src','item.html');
+        }else if(compEle=='needDocumentComp'){
+            $('#iframe').css({'height':'900px'});
+            $('#iframe').attr('src','need.html');
         }
         if(middelComp==''){
             return;
