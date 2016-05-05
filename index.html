@@ -13,12 +13,6 @@
 		<link rel="stylesheet" href="resources/assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
         <script src="resources/assets/js/jquery.2.1.1.min.js"></script>
 		<script src="resources/js/index.js"></script>
-        <!--bootstrap的js-->
-		<script src="resources/assets/js/bootstrap.min.js"></script>
-        <!--框架js-->
-		<script src="resources/assets/js/ace-elements.min.js"></script>
-		<script src="resources/assets/js/ace.min.js"></script>
-        <script src="resources/assets/js/ace-extra.min.js"></script>
 	</head>
 
 	<body class="no-skin">
@@ -26,30 +20,30 @@
 		<div id="navbar" class="navbar navbar-default">
 			<div class="navbar-container" id="navbar-container">
 				<div class="navbar-header pull-left">
-					<a href="index.html" class="navbar-brand">
+					<a class="navbar-brand">
 						<small><i class="fa fa-leaf"></i>个人博客项目管理系统</small>
 					</a>
 				</div>
 
 				<div class="navbar-buttons navbar-header pull-right" role="navigation">
 					<ul class="nav ace-nav">
-						<li class="grey">
-							<a data-toggle="dropdown" class="dropdown-toggle" href="">
+						<li class="grey" style="cursor:pointer">
+							<a onclick="showMsg()" data-toggle="dropdown" class="dropdown-toggle">
 								<i class="ace-icon fa fa-bell"></i>
 								<span class="badge badge-grey">4</span>
 							</a>
-							<ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+							<ul id="msg" class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
 								<li class="dropdown-header">
 									4 条新消息
 								</li>
-								<li class="dropdown-content">
+								<li class="dropdown-content" style="max-height:195px;overflow-y:scroll;">
 									<ul class="dropdown-menu dropdown-navbar">
 										<li>
-											<a href="" class="clearfix">
+											<a class="clearfix">
 												<img src="resources/assets/avatars/avatar.png" class="msg-photo" />
 												<span class="msg-body">
 													<span class="msg-title">
-														<span class="blue">王五:</span>
+														<span class="blue">小曲:</span>
 														提交了任务
 													</span>
 													<span class="msg-time">
@@ -60,11 +54,11 @@
 											</a>
 										</li>
 										<li>
-											<a href="" class="clearfix">
+											<a class="clearfix">
 												<img src="resources/assets/avatars/avatar3.png" class="msg-photo"/>
 												<span class="msg-body">
 													<span class="msg-title">
-														<span class="blue">张三:</span>
+														<span class="blue">小美:</span>
 														修改了数据表test
 													</span>
 													<span class="msg-time">
@@ -75,11 +69,11 @@
 											</a>
 										</li>
 										<li>
-											<a href="" class="clearfix">
+											<a class="clearfix">
 												<img src="resources/assets/avatars/avatar4.png" class="msg-photo" />
 												<span class="msg-body">
 													<span class="msg-title">
-														<span class="blue">李四:</span>
+														<span class="blue">安迪:</span>
 														提交了任务A设计文档
 													</span>
 													<span class="msg-time">
@@ -90,11 +84,11 @@
 											</a>
 										</li>
 										<li>
-											<a href="" class="clearfix">
+											<a class="clearfix">
 												<img src="resources/assets/avatars/avatar2.png" class="msg-photo" />
 												<span class="msg-body">
 													<span class="msg-title">
-														<span class="blue">杨六:</span>
+														<span class="blue">小思:</span>
 														删除了数据表test记录1 ...
 													</span>
 													<span class="msg-time">
@@ -105,11 +99,11 @@
 											</a>
 										</li>
 										<li>
-											<a href="" class="clearfix">
+											<a class="clearfix">
 												<img src="resources/assets/avatars/avatar5.png" class="msg-photo"/>
 												<span class="msg-body">
 													<span class="msg-title">
-														<span class="blue">陈一:</span>
+														<span class="blue">张三：</span>
 														审核了任务六的部署申请
 													</span>
 													<span class="msg-time">
@@ -125,14 +119,14 @@
 						</li>
 
 						<li class="light-blue">
-							<a data-toggle="dropdown" href="" class="dropdown-toggle">
+							<a onclick="showUser()" data-toggle="dropdown" class="dropdown-toggle" style="cursor:pointer;">
 								<img class="nav-user-photo" src="resources/assets/avatars/user.jpg"/>
 								<span class="user-info">
 									<small>欢迎,</small>张三
 								</span>
 								<i class="ace-icon fa fa-caret-down"></i>
 							</a>
-							<ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+							<ul id="user" class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
 								<li>
 									<a onclick="showProfile()">
 										<i class="ace-icon fa fa-user"></i>
@@ -165,14 +159,12 @@
 						</a>
 					</li>
 					<li class="">
-						<a href="" class="dropdown-toggle">
+						<a class="dropdown-toggle" style="cursor: pointer">
 							<i class="menu-icon fa fa-desktop"></i>
-							<span class="menu-text">
-								数据 &amp; 数据库
-							</span>
+							<span class="menu-text">数据&数据库</span>
 							<b class="arrow fa fa-angle-down"></b>
 						</a>
-						<ul class="submenu">
+						<ul class="submenu" id="dblist">
 							<li class="">
 								<a comp="db" pageh="675px" style="cursor: pointer">
 									<i class="menu-icon fa fa-caret-right"></i>
@@ -188,12 +180,12 @@
 						</ul>
 					</li>
 					<li class="">
-						<a href="" class="dropdown-toggle">
+						<a class="dropdown-toggle" style="cursor: pointer">
 							<i class="menu-icon fa fa-list"></i>
-							<span class="menu-text"> 项目资料 </span>
+							<span class="menu-text">项目资料</span>
 							<b class="arrow fa fa-angle-down"></b>
 						</a>
-						<ul class="submenu">
+						<ul class="submenu" id="projectlist">
                             <li class="">
 								<a comp="item" pageh="740px" style="cursor: pointer">
 									<i class="menu-icon fa fa-caret-right"></i>
@@ -244,7 +236,7 @@
 						<ul class="breadcrumb">
 							<li>
 								<i class="ace-icon fa fa-home home-icon"></i>
-								<a href="">主页</a>
+								<a>主页</a>
 							</li>
 							<li class="active" id="childTitle">项目介绍</li>
 						</ul>
