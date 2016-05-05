@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-		<title>PM项目管理系统</title>
+		<title>个人博客项目管理系统</title>
         <!--bootstrap样式-->
 		<link rel="stylesheet" href="resources/assets/css/bootstrap.min.css" />
         <!--图标-->
@@ -13,7 +13,6 @@
 		<link rel="stylesheet" href="resources/assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
         <script src="resources/assets/js/jquery.2.1.1.min.js"></script>
 		<script src="resources/js/index.js"></script>
-		<script src="resources/js/app/dbApp/dbComp.js"></script>
         <!--bootstrap的js-->
 		<script src="resources/assets/js/bootstrap.min.js"></script>
         <!--框架js-->
@@ -25,32 +24,28 @@
 	<body class="no-skin">
         <!--顶部-->
 		<div id="navbar" class="navbar navbar-default">
-            <script type="text/javascript">
-				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
-			</script>
 			<div class="navbar-container" id="navbar-container">
 				<div class="navbar-header pull-left">
 					<a href="index.html" class="navbar-brand">
-						<small><i class="fa fa-leaf"></i>PM项目管理系统</small>
+						<small><i class="fa fa-leaf"></i>个人博客项目管理系统</small>
 					</a>
 				</div>
 
 				<div class="navbar-buttons navbar-header pull-right" role="navigation">
 					<ul class="nav ace-nav">
 						<li class="grey">
-							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="">
 								<i class="ace-icon fa fa-bell"></i>
 								<span class="badge badge-grey">4</span>
 							</a>
 							<ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
 								<li class="dropdown-header">
-									<i class="ace-icon fa fa-check"></i>
-									4 数据更新
+									4 条新消息
 								</li>
 								<li class="dropdown-content">
 									<ul class="dropdown-menu dropdown-navbar">
 										<li>
-											<a href="#" class="clearfix">
+											<a href="" class="clearfix">
 												<img src="resources/assets/avatars/avatar.png" class="msg-photo" />
 												<span class="msg-body">
 													<span class="msg-title">
@@ -65,7 +60,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#" class="clearfix">
+											<a href="" class="clearfix">
 												<img src="resources/assets/avatars/avatar3.png" class="msg-photo"/>
 												<span class="msg-body">
 													<span class="msg-title">
@@ -80,7 +75,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#" class="clearfix">
+											<a href="" class="clearfix">
 												<img src="resources/assets/avatars/avatar4.png" class="msg-photo" />
 												<span class="msg-body">
 													<span class="msg-title">
@@ -89,13 +84,13 @@
 													</span>
 													<span class="msg-time">
 														<i class="ace-icon fa fa-clock-o"></i>
-														<span>13:15</span>
+														<span>2016-05-01 13:15</span>
 													</span>
 												</span>
 											</a>
 										</li>
 										<li>
-											<a href="#" class="clearfix">
+											<a href="" class="clearfix">
 												<img src="resources/assets/avatars/avatar2.png" class="msg-photo" />
 												<span class="msg-body">
 													<span class="msg-title">
@@ -110,7 +105,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#" class="clearfix">
+											<a href="" class="clearfix">
 												<img src="resources/assets/avatars/avatar5.png" class="msg-photo"/>
 												<span class="msg-body">
 													<span class="msg-title">
@@ -130,11 +125,10 @@
 						</li>
 
 						<li class="light-blue">
-							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+							<a data-toggle="dropdown" href="" class="dropdown-toggle">
 								<img class="nav-user-photo" src="resources/assets/avatars/user.jpg"/>
 								<span class="user-info">
-									<small>欢迎,</small>
-									Rex
+									<small>欢迎,</small>张三
 								</span>
 								<i class="ace-icon fa fa-caret-down"></i>
 							</a>
@@ -165,13 +159,13 @@
 			<div id="sidebar" class="sidebar responsive">
 				<ul class="nav nav-list" id="pm-nav">
 					<li class="active">
-						<a comp="projectIntrComp" style="cursor: pointer">
+						<a comp="introduce" pageh="651px" style="cursor: pointer">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> 项目介绍 </span>
 						</a>
 					</li>
 					<li class="">
-						<a href="#" class="dropdown-toggle">
+						<a href="" class="dropdown-toggle">
 							<i class="menu-icon fa fa-desktop"></i>
 							<span class="menu-text">
 								数据 &amp; 数据库
@@ -180,70 +174,61 @@
 						</a>
 						<ul class="submenu">
 							<li class="">
-								<a href="#" class="dropdown-toggle">
+								<a comp="db" pageh="800px" style="cursor: pointer">
 									<i class="menu-icon fa fa-caret-right"></i>
-									数据库管理
-									<b class="arrow fa fa-angle-down"></b>
+									<span>数据表详情</span>
 								</a>
-								<ul class="submenu">
-									<li class="">
-										<a comp="dbDetailComp" style="cursor: pointer">
-											<i class="menu-icon fa fa-caret-right"></i>
-											数据表详情
-										</a>
-									</li>
-									<li class="">
-										<a comp="dbComp" style="cursor: pointer">
-											<i class="menu-icon fa fa-caret-right"></i>
-											SQL脚本
-										</a>
-									</li>
-								</ul>
+							</li>
+							<li class="">
+								<a comp="dbsql" pageh="600px" style="cursor: pointer">
+									<i class="menu-icon fa fa-caret-right"></i>
+									<span>SQL脚本</span>
+								</a>
 							</li>
 						</ul>
 					</li>
 					<li class="">
-						<a href="#" class="dropdown-toggle">
+						<a href="" class="dropdown-toggle">
 							<i class="menu-icon fa fa-list"></i>
 							<span class="menu-text"> 项目资料 </span>
 							<b class="arrow fa fa-angle-down"></b>
 						</a>
 						<ul class="submenu">
                             <li class="">
-								<a comp="projectDocumentComp" style="cursor: pointer">
+								<a comp="item" pageh="800px" style="cursor: pointer">
 									<i class="menu-icon fa fa-caret-right"></i>
-									项目约束
+									<span>项目约束</span>
 								</a>
 							</li>
 							<li class="">
-								<a comp="needDocumentComp" style="cursor: pointer">
+								<a comp="need" pageh="900px" style="cursor: pointer">
 									<i class="menu-icon fa fa-caret-right"></i>
-									需求文档
+									<span>需求文档</span>
 								</a>
 							</li>
 							<li class="">
-								<a comp="designDocumentComp" style="cursor: pointer">
+								<a comp="" style="cursor: pointer">
 									<i class="menu-icon fa fa-caret-right"></i>
-									设计文档
+									<span>设计文档</span>
 								</a>
 							</li>
 							<li class="">
-								<a comp="develorDocumentComp" style="cursor: pointer">
+								<a comp="" style="cursor: pointer">
 									<i class="menu-icon fa fa-caret-right"></i>
-									开发文档
+									<span>开发文档</span>
 								</a>
 							</li>
 							
 							<li class="">
-								<a comp="testDocumentComp" style="cursor: pointer">
+								<a comp="" style="cursor: pointer">
 									<i class="menu-icon fa fa-caret-right"></i>
-									测试文档
+									<span>测试文档</span>
 								</a>
 							</li>
 						</ul>
 					</li>
 					<li class="">
-						<a comp="logComp" style="cursor: pointer">
+						<a comp="log" pageh="1160px" style="cursor: pointer">
 							<i class="menu-icon fa fa-list-alt"></i>
 							<span class="menu-text">项目日常日志</span>
 						</a>
@@ -259,7 +244,7 @@
 						<ul class="breadcrumb">
 							<li>
 								<i class="ace-icon fa fa-home home-icon"></i>
-								<a href="#">主页</a>
+								<a href="">主页</a>
 							</li>
 							<li class="active" id="childTitle">项目介绍</li>
 						</ul>
@@ -280,7 +265,7 @@
 				<div class="footer-inner">
 					<div class="footer-content">
 						<span class="bigger-120">
-							<span class="blue bolder">PM项目管理系统</span>
+							<span class="blue bolder">项目管理系统</span>
 						</span>
 					</div>
 				</div>

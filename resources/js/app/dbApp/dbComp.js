@@ -145,6 +145,7 @@ var dbComp = {
         $(pageBar).appendTo(content);
 
         dbComp.resultTableResult = content;
+        console.info(content[0].outerHTML);
         return content;
     },
     createTableTitle: function(){
