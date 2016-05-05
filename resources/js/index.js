@@ -7,10 +7,18 @@ $(function(){
         if(typeof(compEle)=="undefined" || compEle==""){
             if(title=="项目资料"){//展开菜单
                 $("#dblist").hide();
-                $("#projectlist").show();
+                if($("#projectlist").is(":hidden")){
+                    $("#projectlist").show();
+                }else{
+                    $("#projectlist").hide();
+                }
             }else if(title=="数据&amp;数据库"){
                 $("#projectlist").hide();
-                $("#dblist").show();
+                if($("#dblist").is(":hidden")){
+                    $("#dblist").show();
+                }else{
+                    $("#dblist").hide();
+                }
             }
             return;
         }else if(compEle=="log" || compEle=="introduce"){
@@ -26,6 +34,9 @@ $(function(){
 
 //显示个人资料页面
 function showProfile(){
+    $("#dblist").hide();
+    $("#projectlist").hide();
+    $("#user").hide();
     $("#childTitle").html("个人资料");;
     $("#swan").css({"height":"651px"});
     $("#swan").attr("src","profile.html");
