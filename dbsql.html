@@ -48,7 +48,9 @@
                                 </span>
                             </span>
                         </h4>
-                    <div class="wysiwyg-editor" style="height: 200px;" id="sqltext" contenteditable="true"></div>
+                    <div class="wysiwyg-editor" style="height: 200px;" id="sqltext" contenteditable="true">
+                        SELECT * FROM user;
+                    </div>
                 <div class="widget-toolbox padding-4 clearfix">
                     <div class="btn-group pull-left">
                         <button class="btn btn-sm btn-info" val="clean">
@@ -65,7 +67,6 @@
                 </div>
                 <div class="hr hr-double dotted"></div>
                 </div></div>
-                
                 <div class="col-xs-12">
                     <h4 class="header green clearfix">SQL语句执行结果</h4>
                     <table style="width: 100%;" cellspacing="0" cellpadding="0" border="0">
@@ -86,19 +87,19 @@
                                 <div class="ui-jqgrid-sortable">id</div>
                             </th>
                             <th class="dbTh" style="width: auto;">
-                                <div class="ui-jqgrid-sortable">last_sales</div>
+                                <div class="ui-jqgrid-sortable">username</div>
                             </th>
                             <th class="dbTh" style="width: auto;">
-                                <div class="ui-jqgrid-sortable">Name</div>
+                                <div class="ui-jqgrid-sortable">password</div>
                             </th>
                             <th class="dbTh" style="width: auto;">
-                                <div class="ui-jqgrid-sortable">stock</div>
+                                <div class="ui-jqgrid-sortable">datetime</div>
                             </th>
                             <th class="dbTh" style="width: auto;">
-                                <div class="ui-jqgrid-sortable">ship vis</div>
+                                <div class="ui-jqgrid-sortable">sex</div>
                             </th>
                             <th class="dbTh" style="width: auto;">
-                                <div class="ui-jqgrid-sortable">notes</div>
+                                <div class="ui-jqgrid-sortable">address</div>
                             </th>
                         </tr>
                         <tr class="ui-jqgrid-labels" style="background-color: #fff">
@@ -120,19 +121,19 @@
                                 <div class="ui-jqgrid-sortable">1</div>
                             </th>
                             <th class="dbTh" style="width: auto;">
-                                <div class="ui-jqgrid-sortable">Desktop Computer</div>
+                                <div class="ui-jqgrid-sortable">swan</div>
                             </th>
                             <th class="dbTh" style="width: auto;">
-                                <div class="ui-jqgrid-sortable">note</div>
+                                <div class="ui-jqgrid-sortable">123456</div>
                             </th>
                             <th class="dbTh" style="width: auto;">
-                                <div class="ui-jqgrid-sortable">Yes</div>
+                                <div class="ui-jqgrid-sortable">2016-04-26 10:00</div>
                             </th>
                             <th class="dbTh" style="width: auto;">
-                                <div class="ui-jqgrid-sortable">FedEx</div>
+                                <div class="ui-jqgrid-sortable">women</div>
                             </th>
                             <th class="dbTh" style="width: auto;">
-                                <div class="ui-jqgrid-sortable">2007-12-03</div>
+                                <div class="ui-jqgrid-sortable">广东省广州市</div>
                             </th>
                         </tr>
                         <tr class="ui-jqgrid-labels" style="background-color: #F9F9F9">
@@ -154,19 +155,223 @@
                                 <div class="ui-jqgrid-sortable">2</div>
                             </th>
                             <th class="dbTh" style="width: auto;">
-                                <div class="ui-jqgrid-sortable">Laptop</div>
+                                <div class="ui-jqgrid-sortable">xiaoming</div>
                             </th>
                             <th class="dbTh" style="width: auto;">
-                                <div class="ui-jqgrid-sortable">Long text </div>
+                                <div class="ui-jqgrid-sortable">123456</div>
                             </th>
                             <th class="dbTh" style="width: auto;">
-                                <div class="ui-jqgrid-sortable">Yes</div>
+                                <div class="ui-jqgrid-sortable">2016-04-25 10:00</div>
                             </th>
                             <th class="dbTh" style="width: auto;">
-                                <div class="ui-jqgrid-sortable">InTime</div>
+                                <div class="ui-jqgrid-sortable">man</div>
                             </th>
                             <th class="dbTh" style="width: auto;">
-                                <div class="ui-jqgrid-sortable">2007-12-03</div>
+                                <div class="ui-jqgrid-sortable">广东省广州市</div>
+                            </th>
+                        </tr>
+                         <tr class="ui-jqgrid-labels" style="background-color: #F9F9F9">
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">3</div>
+                            </th>
+                            <th class="dbTh" style="width: 25px;">
+                                <div class="ui-jqgrid-sortable">
+                                    <input class="cbox" type="checkbox">
+                                </div>
+                            </th>
+                            <th class="dbTh" style="width: 80px;">
+                                <div class="ui-jqgrid-sortable">
+                                    <i val="update" dataid="2" class="ace-icon fa fa-pencil blue align-left bigger-125" style="padding-left: 15px;"></i>
+                                    <i val="delete" dataid="2" class="ace-icon fa fa-trash-o red align-right bigger-125" style="padding-left: 15px;"></i>
+                                </div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">3</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">xiaoming</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">123456</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">2016-04-25 10:00</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">man</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">广东省广州市</div>
+                            </th>
+                        </tr>
+                         <tr class="ui-jqgrid-labels" style="background-color: #F9F9F9">
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">4</div>
+                            </th>
+                            <th class="dbTh" style="width: 25px;">
+                                <div class="ui-jqgrid-sortable">
+                                    <input class="cbox" type="checkbox">
+                                </div>
+                            </th>
+                            <th class="dbTh" style="width: 80px;">
+                                <div class="ui-jqgrid-sortable">
+                                    <i val="update" dataid="2" class="ace-icon fa fa-pencil blue align-left bigger-125" style="padding-left: 15px;"></i>
+                                    <i val="delete" dataid="2" class="ace-icon fa fa-trash-o red align-right bigger-125" style="padding-left: 15px;"></i>
+                                </div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">4</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">xiaoming</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">123456</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">2016-04-25 10:00</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">man</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">广东省广州市</div>
+                            </th>
+                        </tr>
+                         <tr class="ui-jqgrid-labels" style="background-color: #F9F9F9">
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">5</div>
+                            </th>
+                            <th class="dbTh" style="width: 25px;">
+                                <div class="ui-jqgrid-sortable">
+                                    <input class="cbox" type="checkbox">
+                                </div>
+                            </th>
+                            <th class="dbTh" style="width: 80px;">
+                                <div class="ui-jqgrid-sortable">
+                                    <i val="update" dataid="2" class="ace-icon fa fa-pencil blue align-left bigger-125" style="padding-left: 15px;"></i>
+                                    <i val="delete" dataid="2" class="ace-icon fa fa-trash-o red align-right bigger-125" style="padding-left: 15px;"></i>
+                                </div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">5</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">xiaoming</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">123456</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">2016-04-25 10:00</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">man</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">广东省广州市</div>
+                            </th>
+                        </tr>
+                         <tr class="ui-jqgrid-labels" style="background-color: #F9F9F9">
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">6</div>
+                            </th>
+                            <th class="dbTh" style="width: 25px;">
+                                <div class="ui-jqgrid-sortable">
+                                    <input class="cbox" type="checkbox">
+                                </div>
+                            </th>
+                            <th class="dbTh" style="width: 80px;">
+                                <div class="ui-jqgrid-sortable">
+                                    <i val="update" dataid="2" class="ace-icon fa fa-pencil blue align-left bigger-125" style="padding-left: 15px;"></i>
+                                    <i val="delete" dataid="2" class="ace-icon fa fa-trash-o red align-right bigger-125" style="padding-left: 15px;"></i>
+                                </div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">6</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">xiaoming</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">123456</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">2016-04-25 10:00</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">man</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">广东省广州市</div>
+                            </th>
+                        </tr>
+                         <tr class="ui-jqgrid-labels" style="background-color: #F9F9F9">
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">7</div>
+                            </th>
+                            <th class="dbTh" style="width: 25px;">
+                                <div class="ui-jqgrid-sortable">
+                                    <input class="cbox" type="checkbox">
+                                </div>
+                            </th>
+                            <th class="dbTh" style="width: 80px;">
+                                <div class="ui-jqgrid-sortable">
+                                    <i val="update" dataid="2" class="ace-icon fa fa-pencil blue align-left bigger-125" style="padding-left: 15px;"></i>
+                                    <i val="delete" dataid="2" class="ace-icon fa fa-trash-o red align-right bigger-125" style="padding-left: 15px;"></i>
+                                </div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">7</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">xiaoming</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">123456</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">2016-04-25 10:00</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">man</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">广东省广州市</div>
+                            </th>
+                        </tr>
+                         <tr class="ui-jqgrid-labels" style="background-color: #F9F9F9">
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">8</div>
+                            </th>
+                            <th class="dbTh" style="width: 25px;">
+                                <div class="ui-jqgrid-sortable">
+                                    <input class="cbox" type="checkbox">
+                                </div>
+                            </th>
+                            <th class="dbTh" style="width: 80px;">
+                                <div class="ui-jqgrid-sortable">
+                                    <i val="update" dataid="2" class="ace-icon fa fa-pencil blue align-left bigger-125" style="padding-left: 15px;"></i>
+                                    <i val="delete" dataid="2" class="ace-icon fa fa-trash-o red align-right bigger-125" style="padding-left: 15px;"></i>
+                                </div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">8</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">xiaoming</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">123456</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">2016-04-25 10:00</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">man</div>
+                            </th>
+                            <th class="dbTh" style="width: auto;">
+                                <div class="ui-jqgrid-sortable">广东省广州市</div>
                             </th>
                         </tr>
                     </table>
@@ -212,16 +417,19 @@
                                                     <td id="prev_grid-pager" class="ui-pg-button ui-corner-all ui-state-disabled" style="cursor: default;">
                                                         <span pagetype="prev" class="ui-icon ace-icon fa fa-angle-left bigger-140"></span>
                                                     </td>
-                                                    <td>Page
+                                                    <td>第
                                                         <input id="currentPage" class="ui-pg-input" type="text" size="2" maxlength="7" value="1" role="textbox">
-                                                        of 
-                                                        <span>3</span>
+                                                        共 
+                                                        <span>3页</span>
                                                     </td>
                                                     <td id="next_grid-pager" class="ui-pg-button ui-corner-all" style="cursor: default;">
                                                         <span pagetype="next" class="ui-icon ace-icon fa fa-angle-right bigger-140"></span>
                                                     </td>
                                                     <td id="last_grid-pager" class="ui-pg-button ui-corner-all" style="cursor: default;">
                                                         <span pagetype="last" class="ui-icon ace-icon fa fa-angle-double-right bigger-140"></span>
+                                                    </td>
+                                                    <td>
+                                                        <span>每页显示数目</span>
                                                     </td>
                                                     <td>
                                                         <select class="ui-pg-selbox">
@@ -234,7 +442,7 @@
                                             </table>
                                         </td>
                                         <td align="right">
-                                            <div style="text-align:right" class="ui-paging-info">View 1 - 10 of 23</div>
+                                            <div style="text-align:right" class="ui-paging-info">共23条记录</div>
                                         </td>
                                     </tr>
                                 </table>
